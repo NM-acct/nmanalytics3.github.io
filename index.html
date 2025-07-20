@@ -1,273 +1,330 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <title>Dimension by HTML5 UP</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <style>
-      /* Summary styling */
-      details > summary {
-        cursor: pointer;
-        font-weight: bold;
-        margin-top: 0.5rem;
-      }
-      details > summary::-webkit-details-marker {
-        font-size: 1.2rem;
-      }
-      .image.thumb {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-        margin-bottom: 0.75rem;
-        cursor: zoom-in;
-      }
-      .image.main img.rounded {
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        display: block;
-        margin: 0 auto 1.5rem auto;
-      }
-    </style>
-  </head>
-  <body class="is-preload">
-    <div id="wrapper">
-      <header id="header">
-        <div class="logo">
-          <span class="icon fa-gem"></span>
-        </div>
-        <div class="content">
-          <div class="inner">
-            <h1>Hi! this is Noe, Your Data Analyst</h1>
-            <p>Building insights with Excel, SQL, Power BI, Tableau, and GitHub<br />
-              <small style="color: #999;">
-                Template is designed by <a href="https://html5up.net">HTML5 UP</a> and released for free under the <a href="https://html5up.net/license">Creative Commons</a> license.
-              </small>
-            </p>
-          </div>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#aboutme">About me</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+	<head>
+		<title>Noe Gonzales | Data Analyst Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/lightbox/lightbox.min.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.profile-container {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 2rem;
+				flex-wrap: wrap;
+			}
+			.profile-container img {
+				border-radius: 50%;
+				width: 150px;
+				height: 150px;
+				object-fit: cover;
+			}
+			.profile-text h1 {
+				font-size: 2.3rem;
+				margin-bottom: 0.5rem;
+			}
+			.profile-text p {
+				font-size: 1.3rem;
+				margin: 0.3rem 0;
+			}
+			summary {
+				font-weight: bold;
+				cursor: pointer;
+				margin-top: 1rem;
+			}
+			.seemore {
+				display: inline-block;
+				margin-top: 0.5rem;
+				padding: 0.5rem 1rem;
+				background-color: #00bfff;
+				color: #fff;
+				border-radius: 5px;
+				font-weight: bold;
+				text-decoration: none;
+			}
+			.seemore:hover {
+				background-color: #009acd;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
 
-      <div id="main">
-        <article id="aboutme">
-  <h2 class="major">About me</h2>
-  <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 1rem;">
-    <!-- Profile image -->
-    <img src="images/pic03.jpg" alt="My Profile" 
-         style="border-radius: 50%; width: 250px; height: 250px; object-fit: cover;">
+			<!-- Header -->
+			<header id="header">
+				<div class="logo">
+					<span class="icon fa-gem"></span>
+				</div>
+				<div class="content">
+					<div class="inner">
 
-    <!-- Greeting text -->
-    <div style="flex: 1; min-width: 200px;">
-      <h1 style="font-size: 2rem; margin: 0;">Hi, I’m Noe</h1>
-      <!-- Resume CTA -->
-      <p style="margin-top: 0.5rem; font-size: 1.05rem; font-weight: bold;">
-        📄 <a href="https://drive.google.com/file/d/191LyrwiEhs286wiGD5ahCY7vjdBpKX6r/view?usp=sharing" target="_blank">
-           See my Resume!
-        </a>
-      </p>
-      <p style="margin-top: 0.5rem;">
-        I’m a data analyst and bookkeeper with a background in management accounting and a passion for clean data and clear insights. I use tools like <strong>Excel</strong>, <strong>SQL</strong>, <strong>Power BI</strong>, and <strong>Tableau</strong> to bring numbers to life.
-      </p>
-    </div>
-  </div>
+						<!-- 👤 Profile Section -->
+						<div class="profile-container">
+							<img src="images/pic03.jpg" alt="Noe Gonzales" />
+							<div class="profile-text">
+								<h1>Hi, I'm Noe Mae Mondejar</h1>
+								<p>I'm 24 years old</p>
+								<p>I'm from the Philippines</p>
+							</div>
+						</div>
 
-  <ul style="margin-top: 1rem;">
-    <li><strong>Education:</strong> Bachelor’s in Management Accounting</li>
-    <li><strong>Experience:</strong> Document reviewer & audit compliance support</li>
-    <li><strong>Side Work:</strong> Practiced Excel-based reporting and data cleaning for internal tracking</li>
-  </ul>
+						<!-- 🔧 Tools summary line -->
+						<p>Building insights with Excel, SQL, Power BI, Tableau, and GitHub</p>
+						<small style="color: #999;">Template by <a href="https://html5up.net">HTML5 UP</a>, released under <a href="https://html5up.net/license">Creative Commons</a>.</small>
+					</div>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#aboutme">About me</a></li>
+						<li><a href="#work">Work</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+				
+        <!-- Main -->
+					<div id="main">
 
-  <p>
-    I also built this portfolio site from scratch using HTML and GitHub Pages, and I regularly use tools like ChatGPT and Formspree to automate workflows and support client work.
-  </p>
-</article>
+						<!-- About Me -->
+						<article id="aboutme">
+							<h2 class="major">About Me</h2>
 
-        <article id="work">
-          <h2 class="major">My Works</h2>
+							<div class="profile-flex">
+								<span class="image main">
+									<img src="images/pic03.jpg" alt="My Profile" class="rounded" />
+								</span>
+								<div class="profile-text">
+									<h3>Hi, I’m Noe</h3>
+								</div>
+							</div>
 
-          <!-- Project 1 -->
-          <h3>Supermarket Sales Dashboard (Excel + Power BI)</h3>
-          <a href="images/pic02.jpg" data-lightbox="project1" data-title="Sales Overview Dashboard">
-            <img src="images/pic02.jpg" alt="Dashboard Thumbnail" class="image thumb" />
-          </a>
-          <a href="images/pic02.jpg" data-lightbox="project1" data-title="Customer Sales Breakdown" style="display:none;"></a>
-          <a href="images/pic02.jpg" data-lightbox="project1" data-title="Product Line Analysis" style="display:none;"></a>
-          <p><strong>Data Source:</strong> Supermarket Sales dataset from a supermarket chain in Myanmar.</p>
-          <p><strong>Overview:</strong> Visual dashboard tracking monthly sales, profit trends, top categories, and branch performance.</p>
-          <details>
-            <summary>See More →</summary>
-            <ul>
-              <li>Cleaned raw CSV: fixed dates, trimmed spaces, standardized categories in Excel.</li>
-              <li>Built interactive filters (branch, product line, payment) in Power BI.</li>
-              <li>Created visuals: line charts, bar charts, and maps with KPIs.</li>
-              <li>Configured monthly data snapshot exports for reporting.</li>
-            </ul>
-          </details>
+							<!-- Resume + CTA -->
+							<p style="font-size: 1.1rem; font-weight: bold; text-align: center;">
+								📄 <a href="https://drive.google.com/file/d/191LyrwiEhs286wiGD5ahCY7vjdBpKX6r/view?usp=sharing" target="_blank"><strong>See my Resume</strong></a> &nbsp;|&nbsp;
+								👉 <a href="#work"><strong>See My Projects</strong></a> &nbsp;|&nbsp;
+								✨ <a href="#skills"><strong>Explore My Skills</strong></a>
+							</p>
 
-          <!-- Project 2 -->
-          <h3>Customer Retention Insights (SQL + Tableau)</h3>
-          <a href="images/pic02.jpg" data-lightbox="project2" data-title="Churn Dashboard">
-            <img src="images/pic02.jpg" alt="Retention Thumbnail" class="image thumb" />
-          </a>
-          <a href="images/pic02.jpg" data-lightbox="project2" style="display:none;"></a>
-          <p><strong>Data Source:</strong> Telco Churn dataset (dirty data from Kaggle & cleaned SQL dropdown).</p>
-          <p><strong>Overview:</strong> Dashboard exploring customer churn across contract, tenure, and service trends.</p>
-          <details>
-            <summary>See More →</summary>
-            <ul>
-              <li>Detected and fixed missing TotalCharges entries using SQL TRIM and NULL logic.</li>
-              <li>Grouped customers by tenure and contract; calculated churn rates over time.</li>
-              <li>Developed interactive Tableau visuals: line charts, bar charts, retention funnels.</li>
-              <li>Deployed live on Tableau Public with filter interactivity.</li>
-            </ul>
-          </details>
+							<p>I’m a data analyst and bookkeeper with a background in Management Accounting and a passion for making messy data make sense. I use tools like <strong>Excel, SQL, Power BI, Tableau</strong> and even AI tools like ChatGPT to bring clarity and insight to reporting.</p>
 
-          <!-- Project 3 -->
-          <h3>Product Return Dashboard (Excel + Power Query + Power BI)</h3>
-          <a href="images/pic02.jpg" data-lightbox="project3" data-title="Returns Dashboard">
-            <img src="images/pic02.jpg" alt="Return Dashboard Thumbnail" class="image thumb" />
-          </a>
-          <a href="images/pic02.jpg" data-lightbox="project3" style="display:none;"></a>
-          <p><strong>Data Source:</strong> Return transaction logs from client dataset.</p>
-          <p><strong>Overview:</strong> Interactive report on return reasons, volume, cost, and issue frequency.</p>
-          <details>
-            <summary>See More →</summary>
-            <ul>
-              <li>Cleaned messy data using Excel + Power Query (standardized codes, removed duplicates).</li>
-              <li>Built Power BI visuals: pie charts for return reasons, trend lines, and KPI cards.</li>
-              <li>Enabled slicers by region, product category, and date period.</li>
-              <li>Set up export to PDF for weekly stakeholder distribution.</li>
-            </ul>
-          </details>
+							<ul>
+								<li><strong>Education:</strong> Bachelor’s in Management Accounting</li>
+								<li><strong>Work Experience:</strong> Document reviewer & audit compliance assistant</li>
+								<li><strong>Ongoing Practice:</strong> Cleaning and analyzing internal reports using Excel (PivotTables, formulas, charts)</li>
+							</ul>
 
-          <!-- Project 4 -->
-          <h3>Website Editor (HTML + GitHub Pages)</h3>
-          <a href="images/pic02.jpg" data-lightbox="project4" data-title="Portfolio Website">
-            <img src="images/pic02.jpg" alt="Site Thumbnail" class="image thumb" />
-          </a>
-          <a href="images/pic02.jpg" data-lightbox="project4" style="display:none;"></a>
-          <p><strong>Overview:</strong> Built a responsive personal portfolio site hosted on GitHub Pages with clean HTML & CSS edits.</p>
-          <details>
-            <summary>See More →</summary>
-            <ul>
-              <li>Customized Dimension theme HTML structure and design.</li>
-              <li>Fixed mobile responsiveness—optimized navigation and images.</li>
-              <li>Integrated Lightbox gallery for project previews.</li>
-              <li>Implemented form submission using Formspree.</li>
-            </ul>
-          </details>
+							<p>I also built this portfolio from scratch using HTML and GitHub Pages. I automate forms using Formspree and use ChatGPT to streamline documentation and content creation. Check out my projects and skills to see how I work!</p>
+						</article>
 
-          <!-- Project 5 -->
-          <h3>Workflow Automation with ChatGPT & Formspree</h3>
-          <a href="images/pic02.jpg" data-lightbox="project5" data-title="Automation Workflow">
-            <img src="images/pic02.jpg" alt="Automation Thumbnail" class="image thumb" />
-          </a>
-          <a href="images/pic02.jpg" data-lightbox="project5" style="display:none;"></a>
-          <p><strong>Overview:</strong> Built no-code automation workflows using ChatGPT and Formspree for form-based content delivery.</p>
-          <details>
-            <summary>See More →</summary>
-            <ul>
-              <li>Designed email workflow templates with ChatGPT for client communications.</li>
-              <li>Implemented web form using Formspree—automated form delivery to email inbox.</li>
-              <li>Integrated validation and confirmation messaging (405 fix, hidden fields).</li>
-              <li>Deployed live on GitHub Pages with embedded email responses.</li>
-            </ul>
-          </details>
-        </article>
+						<!-- Work -->
+						<article id="work">
+							<h2 class="major">My Works</h2>
 
-        <article id="skills">
-          <h2 class="major">Skills</h2>
-          <span class="image main"><img src="images/pic03.jpg" alt="Skills" /></span>
-          <p>I specialize in data analysis and bookkeeping with a strong foundation in tools and platforms that support decision-making and reporting. I also bring soft skills like communication and time management—ideal for both independent and collaborative work.</p>
+							<!-- Project 1 -->
+							<h3>Supermarket Sales Dashboard (Excel + Power BI)</h3>
+							<a href="images/pic02.jpg" data-lightbox="project1">
+								<img class="image main" src="images/pic02.jpg" alt="Supermarket Dashboard" />
+							</a>
+							<!-- Hidden Lightbox gallery images -->
+							<a href="images/pic02.jpg" data-lightbox="project1" style="display:none;"></a>
+							<a href="images/pic02.jpg" data-lightbox="project1" style="display:none;"></a>
 
-          <h3>Data Analysis</h3>
-          <span class="image main"><img src="images/pic03.jpg" alt="Data Analysis" /></span>
-          <ul>
-            <li>Excel: PivotTables, Charts, VLOOKUP/XLOOKUP, Power Query</li>
-            <li>SQL: Joins, filtering, aggregation, subqueries</li>
-            <li>Tableau & Power BI: Built interactive dashboards</li>
-          </ul>
+							<p>This end-to-end dashboard analyzes supermarket sales performance using Excel for cleaning and Power BI for visuals. It tracks metrics like sales by gender, payment methods, and product line popularity.</p>
+							
+							<details>
+								<summary><strong>See More</strong></summary>
+								<ul>
+									<li><strong>Data Source:</strong> Supermarket Sales Dataset from a retail chain in Myanmar via Kaggle</li>
+									<li><strong>What I Did:</strong> Cleaned and transformed raw sales data using Excel, then created interactive KPIs and charts in Power BI.</li>
+									<li><strong>Focus:</strong> Time-based analysis, customer types, and total revenue breakdown</li>
+								</ul>
+							</details>
 
-          <h3>Bookkeeping & Accounting</h3>
-          <span class="image main"><img src="images/pic03.jpg" alt="Bookkeeping" /></span>
-          <ul>
-            <li>Accounts reconciliation, journal entries, ledger reviews</li>
-            <li>Financial reporting, monthly summaries</li>
-            <li>Inventory and costing analysis</li>
-          </ul>
+              							<!-- Project 2 -->
+							<h3>Customer Retention Insights (SQL + Tableau)</h3>
+							<a href="images/pic02.jpg" data-lightbox="project2">
+								<img class="image main" src="images/pic02.jpg" alt="Telco Churn" />
+							</a>
+							<a href="images/pic02.jpg" data-lightbox="project2" style="display:none;"></a>
+							<a href="images/pic02.jpg" data-lightbox="project2" style="display:none;"></a>
 
-          <h3>Tools & Platforms</h3>
-          <span class="image main"><img src="images/pic03.jpg" alt="Tools" /></span>
-          <ul>
-            <li>Excel, Google Sheets, Word, Docs</li>
-            <li>DB Browser for SQLite</li>
-            <li>Tableau Public, Power BI</li>
-            <li>Canva, GitHub Pages</li>
-          </ul>
+							<p>I explored churn patterns in customer data using SQL for data wrangling and Tableau for dynamic dashboards. This helped uncover why customers leave and where businesses can improve.</p>
+							
+							<details>
+								<summary><strong>See More</strong></summary>
+								<ul>
+									<li><strong>Data Source:</strong> Telco Customer Churn Dataset (Kaggle)</li>
+									<li><strong>What I Did:</strong> Cleaned the dataset (tenure, contracts, internet service), built queries with JOINs and aggregations in SQLite, and visualized churn metrics using Tableau</li>
+									<li><strong>Insights:</strong> Customers with month-to-month contracts and fiber internet showed highest churn</li>
+								</ul>
+							</details>
 
-          <h3>AI Productivity</h3>
-          <span class="image main"><img src="images/pic03.jpg" alt="AI Productivity" /></span>
-          <ul>
-            <li>ChatGPT: task automation, content writing & ideation</li>
-            <li>Formspree: no-code form workflows</li>
-          </ul>
+							<!-- Project 3 -->
+							<h3>Product Return Dashboard (Excel + Power Query + Power BI)</h3>
+							<a href="images/pic02.jpg" data-lightbox="project3">
+								<img class="image main" src="images/pic02.jpg" alt="Product Returns" />
+							</a>
+							<a href="images/pic02.jpg" data-lightbox="project3" style="display:none;"></a>
+							<a href="images/pic02.jpg" data-lightbox="project3" style="display:none;"></a>
 
-          <h3>Soft Skills</h3>
-          <span class="image main"><img src="images/pic03.jpg" alt="Soft Skills" /></span>
-          <ul>
-            <li>Detail‑oriented & organized</li>
-            <li>Fast learner & self‑directed</li>
-            <li>Clear communicator & documenter</li>
-            <li>Reliable time‑management, remote‑ready</li>
-          </ul>
-        </article>
+							<p>This dashboard visualizes reasons behind returned products and highlights cost patterns to help reduce future returns. Data was manually cleaned in Excel before visualizing trends in Power BI.</p>
+							
+							<details>
+								<summary><strong>See More</strong></summary>
+								<ul>
+									<li><strong>Data Source:</strong> Simulated returns dataset with real-life fields (provided by ChatGPT)</li>
+									<li><strong>What I Did:</strong> Performed data cleaning (removing blanks, fixing text), and built calculated columns in Power BI for trend analysis</li>
+									<li><strong>Focus:</strong> Quantity returned by reason, seasonal spikes, and product categories</li>
+								</ul>
+							</details>
 
-        <article id="contact">
-          <h2 class="major">Contact Me</h2>
-          <form method="POST" action="https://formspree.io/f/xqalekrv">
-            <div class="fields">
-              <div class="field half"><label for="name">Name</label><input type="text" name="name" id="name" /></div>
-              <div class="field half"><label for="email">Email</label><input type="text" name="email" id="email" /></div>
-              <div class="field"><label for="message">Message</label><textarea name="message" id="message" rows="4"></textarea></div>
-            </div>
-            <ul class="actions">
-              <li><input type="submit" value="Send Message" class="primary" /></li>
-              <li><input type="reset" value="Reset" /></li>
-            </ul>
-          </form>
-          <ul class="icons">
-            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-          </ul>
-        </article>
-      </div>
+							<!-- Project 4 -->
+							<h3>Portfolio Website (HTML + GitHub Pages)</h3>
+							<a href="images/pic02.jpg" data-lightbox="project4">
+								<img class="image main" src="images/pic02.jpg" alt="GitHub Portfolio" />
+							</a>
+							<a href="images/pic02.jpg" data-lightbox="project4" style="display:none;"></a>
 
-      <footer id="footer">
-        <p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-      </footer>
-    </div>
+							<p>I coded this portfolio from scratch using the Dimension theme. It showcases all my projects in one place, mobile-ready and hosted via GitHub Pages. Every section is tailored with CSS, Lightbox image viewing, and CTA buttons.</p>
+							
+							<details>
+								<summary><strong>See More</strong></summary>
+								<ul>
+									<li><strong>Tools Used:</strong> HTML, CSS, GitHub Pages</li>
+									<li><strong>Features:</strong> Lightbox gallery viewer, resume download, CTA links, full responsive layout</li>
+								</ul>
+							</details>
 
-    <div id="bg"></div>
+							<!-- Project 5 -->
+							<h3>AI-Enhanced Workflow: ChatGPT + Formspree</h3>
+							<a href="images/pic02.jpg" data-lightbox="project5">
+								<img class="image main" src="images/pic02.jpg" alt="AI + Automation" />
+							</a>
+							<a href="images/pic02.jpg" data-lightbox="project5" style="display:none;"></a>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-  </body>
+							<p>Integrated ChatGPT for task automation and content writing, plus Formspree for instant website form submissions. This reduces manual work and increases engagement from site visitors.</p>
+							
+							<details>
+								<summary><strong>See More</strong></summary>
+								<ul>
+									<li><strong>Tools Used:</strong> ChatGPT (OpenAI), Formspree.io</li>
+									<li><strong>Use Case:</strong> Automated form setup, cold email preparation, content writing</li>
+								</ul>
+							</details>
+						</article>
+
+						<!-- Skills -->
+						<article id="skills">
+							<h2 class="major">Skills</h2>
+							<span class="image main"><img src="images/pic03.jpg" alt="Skills Overview" /></span>
+							<p>I bring a combination of technical tools, analytical thinking, and real-life accounting experience to the table. My skills turn data into action—and clients into decision-makers.</p>
+
+							<h3>Data Analysis</h3>
+							<span class="image main"><img src="images/pic03.jpg" alt="Data Skills" /></span>
+							<ul>
+								<li><strong>Excel:</strong> PivotTables, Charts, Power Query, VLOOKUP/XLOOKUP</li>
+								<li><strong>SQL:</strong> Joins, filters, aggregations using DB Browser for SQLite</li>
+								<li><strong>Tableau & Power BI:</strong> Built clean dashboards to present churn, sales, and return trends</li>
+							</ul>
+
+							<h3>Bookkeeping & Accounting</h3>
+							<span class="image main"><img src="images/pic03.jpg" alt="Bookkeeping Skills" /></span>
+							<ul>
+								<li>Journal entries, account reconciliation, ledger reviews</li>
+								<li>Monthly report generation using Excel-based trackers</li>
+								<li>Product costing and audit compliance experience</li>
+							</ul>
+
+							<h3>🛠 Tools & Platforms</h3>
+							<span class="image main"><img src="images/pic03.jpg" alt="Tech Stack" /></span>
+							<ul>
+								<li>Microsoft Excel, Google Sheets</li>
+								<li>SQLite (DB Browser), Tableau Public, Power BI</li>
+								<li>Formspree, GitHub Pages, Canva, ChatGPT</li>
+							</ul>
+
+							<h3>AI & Automation</h3>
+							<span class="image main"><img src="images/pic03.jpg" alt="AI Tools" /></span>
+							<ul>
+								<li>Used ChatGPT for content writing, email prep, and form generation</li>
+								<li>Formspree integration for website submissions without coding</li>
+							</ul>
+
+							<h3>Soft Skills</h3>
+							<span class="image main"><img src="images/pic03.jpg" alt="Soft Skills" /></span>
+							<ul>
+								<li>Organized, independent, and detail-oriented</li>
+								<li>Adaptable to new tools and feedback</li>
+								<li>Clear communicator – in emails, reports, and documentation</li>
+								<li>Time management with remote tools</li>
+							</ul>
+						</article>
+
+            						<!-- Contact -->
+						<article id="contact">
+							<h2 class="major">Contact Me</h2>
+							<form method="POST" action="https://formspree.io/f/xqalekrv">
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="primary" /></li>
+									<li><input type="reset" value="Reset" /></li>
+								</ul>
+							</form>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Noe. Design: <a href="https://html5up.net">HTML5 UP</a>. Images: <a href="#">Yours truly!</a></p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+		<!-- Lightbox2 JS and CSS -->
+			<link href="assets/lightbox2/css/lightbox.min.css" rel="stylesheet" />
+			<script src="assets/lightbox2/js/lightbox.min.js"></script>
+			<script>
+				// Optional: Customize Lightbox options
+				lightbox.option({
+					'resizeDuration': 200,
+					'wrapAround': true,
+					'fadeDuration': 200,
+					'imageFadeDuration': 200
+				});
+			</script>
+
+	</body>
 </html>
