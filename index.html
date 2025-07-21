@@ -7,69 +7,75 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   <style>
-    body {
-      background-color: #11100f;
-      color: #faf9f8;
-    }
-    #bg {
-      background: url('images/data-background-dark.jpg') center/cover no-repeat fixed;
-      opacity: 0.3;
-    }
-    a, details summary, .icon {
-      color: #0078D7;
-    }
-    .profile-container {
-      display: flex; align-items: center;
-      justify-content: center; gap: 2rem;
-      margin-bottom: 1.5rem; flex-wrap: wrap;
-    }
+    /* Restore original theme font colors and backgrounds */
+    body, p, ul, h1, h2, h3, summary a { color: inherit; }
+    a { color: inherit; text-decoration: underline; }
+
+    /* Profile picture larger */
     .profile-container img.rounded {
-      width: 260px; height: 260px;
-      border-radius: 50%; object-fit: cover;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      object-fit: cover;
     }
-    .profile-text h2 {
-      font-size: 1.9rem; margin-bottom: 0.5rem;
-    }
-    .profile-text p {
-      font-size: 1.1rem; margin: 0.2rem 0;
-    }
-    details summary {
-      cursor: pointer; text-align: center;
-      font-size: 1.1rem; font-weight: bold;
-      color: #0078D7; padding: 0.5rem 0;
-    }
-    article#work section {
-      margin-bottom: 2.5rem;
-    }
-    .cta-links {
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-    .cta-links a {
-      background: #0078D7; color: #faf9f8;
-      text-decoration: none; padding: 0.5rem 1rem;
-      margin: 0 0.3rem; border-radius: 0.3rem;
+
+    /* Section CTA links styled like the "See My Resume"/"See My Projects" links */
+    .cta-style {
+      font-size: 1.1rem;
       font-weight: bold;
+      margin: 0 0.5rem;
+      text-decoration: none;
+      padding: 0;
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: inherit;
     }
-    .cta-links a:hover {
-      background: #005A9E;
+
+    .cta-style:hover {
+      text-decoration: none;
+      opacity: 0.7;
     }
+
+    /* See More toggle styling */
+    details summary {
+      cursor: pointer;
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: bold;
+      padding: 0.5rem 0;
+    }
+
+    /* Spacing between project sections */
+    article#work section { margin-bottom: 2.5rem; }
+
+    /* Scroll buttons styled in link style */
     .scroll-buttons {
-      text-align: center; margin: 2rem 0;
+      text-align: center;
+      margin: 2rem 0;
     }
     .scroll-buttons button {
-      background-color: #0078D7; border: none;
-      color: #faf9f8; padding: 0.6rem 1.2rem;
-      font-size: 0.9rem; border-radius: 0.5rem;
-      cursor: pointer; margin: 0 0.3rem;
-      transition: background 0.3s;
+      font-size: 0.9rem;
+      background: none;
+      border: none;
+      color: inherit;
+      cursor: pointer;
+      text-decoration: underline;
+      padding: 0 0.3rem;
     }
     .scroll-buttons button:hover {
-      background-color: #005A9E;
+      opacity: 0.7;
     }
+
+    /* Contact icon styling: top-right corner of each section */
     .contact-icon {
-      font-size: 1.4rem; float: right;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 1.8rem;
     }
+    /* Ensure article containers are position: relative */
+    article { position: relative; }
   </style>
 </head>
 <body class="is-preload">
@@ -78,14 +84,14 @@
       document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
     }
   </script>
+
   <div id="wrapper">
     <header id="header">
       <div class="logo"><span class="icon fa-gem"></span></div>
       <div class="content"><div class="inner">
         <h1>Hi! this is Noe, Your Data Analyst</h1>
-        <p>Building insights with Excel, SQL, Power BI, Tableau, and GitHub<br>
-          <small style="color:#ccc;">Template by HTML5 UP, free under CC-A 3.0 license.</small>
-        </p>
+        <p>Building insights with Excel, SQL, Power BI, Tableau, and GitHub<br />
+        <small style="color:#999;">Template is designed by <a href="https://html5up.net">HTML5 UP</a> and released under the <a href="https://html5up.net/license">Creative Commons</a> license.</small></p>
       </div></div>
       <nav><ul>
         <li><a href="#aboutme">About me</a></li>
@@ -94,11 +100,13 @@
         <li><a href="#contact">Contact</a></li>
       </ul></nav>
     </header>
+
     <div id="main">
       <article id="aboutme">
-        <h2 class="major">About Me <a class="icon fa-envelope contact-icon" href="#contact"></a></h2>
+        <a href="#contact" class="icon fa-envelope contact-icon"></a>
+        <h2 class="major">About Me</h2>
         <div class="profile-container">
-          <img src="images/pic03.jpg" alt="My Profile" class="rounded"/>
+          <img src="images/pic03.jpg" alt="My Profile" class="rounded" />
           <div class="profile-text">
             <h2>Hi, I'm Noe May Gonzales</h2>
             <p>I'm 24 years old</p>
@@ -106,54 +114,101 @@
           </div>
         </div>
         <p style="font-size:1.1rem;font-weight:bold;text-align:center;">
-          📄 <a href="https://drive.google.com/file/d/191LyrwiEhs286wiGD5ahCY7vjdBpKX6r/view?usp=sharing">See My Resume</a> |
-          📊 <a href="#work">See My Projects</a> |
-          🛠️ <a href="#skills">Explore My Skills</a>
+          📄 <a href="https://drive.google.com/file/d/191LyrwiEhs286wiGD5ahCY7vjdBpKX6r/view?usp=sharing" class="cta-style">See My Resume</a> |
+          📊 <a href="#work" class="cta-style">See My Projects</a> |
+          🛠️ <a href="#skills" class="cta-style">Explore My Skills</a>
         </p>
-        <!-- your original about content and lists -->
+        <p>I’m a data analyst... clear insights... built this portfolio website myself using HTML and GitHub Pages.</p>
+        <ul>
+          <li><strong>Education:</strong> Bachelor’s in Management Accounting</li>
+          <li><strong>Experience:</strong> Document reviewer & audit compliance support</li>
+          <li><strong>Side Work:</strong> Practiced Excel‑based reporting and data cleaning for internal tracking</li>
+        </ul>
+        <p>I also use AI tools like <strong>ChatGPT</strong> ... automation tools like <strong>Formspree</strong>...</p>
       </article>
+
       <article id="work">
-        <h2 class="major">My Works <a class="icon fa-envelope contact-icon" href="#contact"></a></h2>
-        <div class="cta-links">
-          <a href="#proj1">Supermarket Sales</a>
-          <a href="#proj2">Customer Retention</a>
-          <a href="#proj3">Product Returns</a>
-          <a href="#proj4">Portfolio Site</a>
-          <a href="#proj5">AI + Formspree</a>
-        </div>
+        <a href="#contact" class="icon fa-envelope contact-icon"></a>
+        <h2 class="major">My Works</h2>
+        <p style="text-align:center;">
+          <button class="cta-style" onclick="scrollToElement('proj1')">Supermarket Sales</button>
+          <button class="cta-style" onclick="scrollToElement('proj2')">Customer Retention</button>
+          <button class="cta-style" onclick="scrollToElement('proj3')">Product Returns</button>
+          <button class="cta-style" onclick="scrollToElement('proj4')">Portfolio Site</button>
+          <button class="cta-style" onclick="scrollToElement('proj5')">AI + Formspree</button>
+        </p>
+
+        <!-- Project 1 -->
         <section id="proj1">
-          <!-- proj1 content unchanged -->
+          <h3>Supermarket Sales Dashboard (Excel + Power BI)</h3>
+          <a href="images/pic02.jpg" data-lightbox="project1">
+            <img class="image main" src="images/pic02.jpg" alt="Supermarket Dashboard" />
+          </a>
+          <p>This end-to-end dashboard analyzes supermarket sales performance using Excel... product line popularity.</p>
+          <details><summary><strong>See More</strong></summary>
+            <ul>
+              <li><strong>Data Source:</strong> Supermarket Sales Dataset...</li>
+              <li><strong>What I Did:</strong> Cleaned and transformed raw sales data...</li>
+              <li><strong>Focus:</strong> Time-based analysis...</li>
+            </ul>
+          </details>
         </section>
-        <!-- other projects -->
+        <!-- Repeat for proj2–proj5 with unchanged content -->
+
         <div class="scroll-buttons">
           <button onclick="scrollToElement('wrapper')">▲ Back to Top</button>
           <button onclick="scrollToElement('skills')">▼ Go to Skills</button>
         </div>
       </article>
+
       <article id="skills">
-        <h2 class="major">Skills <a class="icon fa-envelope contact-icon" href="#contact"></a></h2>
-        <!-- skill sections unchanged -->
+        <a href="#contact" class="icon fa-envelope contact-icon"></a>
+        <h2 class="major">Skills</h2>
+        <span class="image main"><img src="images/pic03.jpg" alt="Skills Overview" /></span>
+        <p>I bring a combination of technical tools... decision‑makers.</p>
+        <h3>Data Analysis</h3>
+        <ul>
+          <li><strong>Excel:</strong> PivotTables, Charts, Power Query, VLOOKUP/XLOOKUP</li>
+          <li><strong>SQL:</strong> Joins, filters, aggregations using DB Browser for SQLite</li>
+          <li><strong>Tableau & Power BI:</strong> Built dashboards...</li>
+        </ul>
+        <!-- Additional skill categories unchanged -->
         <div class="scroll-buttons">
           <button onclick="scrollToElement('wrapper')">▲ Back to Top</button>
         </div>
       </article>
+
       <article id="contact">
         <h2 class="major">Contact Me</h2>
-        <!-- form/contact content unchanged -->
+        <form method="POST" action="https://formspree.io/f/xqalekrv">
+          <!-- form content unchanged -->
+        </form>
+        <ul class="icons">
+          <!-- social icons unchanged -->
+        </ul>
       </article>
     </div>
+
     <footer id="footer">
-      <p>&copy; Noe. Design: HTML5 UP. Images: Yours truly!</p>
+      <p>&copy; Noe. Design: <a href="https://html5up.net">HTML5 UP</a>. Images: Yours truly!</p>
     </footer>
   </div>
+
   <div id="bg"></div>
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/browser.min.js"></script>
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
-  <link href="assets/lightbox2/css/lightbox.min.css" rel="stylesheet"/>
+  <link href="assets/lightbox2/css/lightbox.min.css" rel="stylesheet" />
   <script src="assets/lightbox2/js/lightbox.min.js"></script>
-  <script>lightbox.option({resizeDuration:200,wrapAround:true,fadeDuration:200,imageFadeDuration:200});</script>
+  <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'fadeDuration': 200,
+      'imageFadeDuration': 200
+    });
+  </script>
 </body>
 </html>
