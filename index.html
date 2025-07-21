@@ -1,3 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Dimension by HTML5 UP</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <style>
+    .profile-container {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    .profile-container img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .profile-text h2 {
+      font-size: 2rem;
+      margin: 0 0 0.5rem;
+    }
+    .profile-text p {
+      font-size: 1.2rem;
+      margin: 0.25rem 0;
+    }
+    .contact-icon {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      font-size: 1.5rem;
+    }
+    .work-nav-links {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+    }
+    .work-nav-links a {
+      display: block;
+      margin: 0.3rem 0;
+      color: inherit;
+      text-decoration: underline;
+    }
+    .scroll-buttons {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .scroll-buttons button {
+      background: none;
+      border: none;
+      font-size: 1rem;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    details summary {
+      cursor: pointer;
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: bold;
+      padding: 0.5rem 0;
+    }
+    article { position: relative; }
+  </style>
+</head>
+<body class="is-preload">
+
+  <script>
+    function scrollToElement(id) {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+  <div id="wrapper">
+    <header id="header">
+      <div class="logo"><span class="icon fa-gem"></span></div>
+      <div class="content">
+        <div class="inner">
+          <h1>Hi! this is Noe, Your Data Analyst</h1>
+          <p>Building insights with Excel, SQL, Power BI, Tableau, and GitHub<br />
+            <small style="color: #999;">Template is designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
+            for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</small></p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#aboutme">About me</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
 <div id="main">
 
   <!-- About Me -->
