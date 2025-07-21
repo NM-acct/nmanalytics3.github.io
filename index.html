@@ -1,214 +1,276 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Dimension by HTML5 UP</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-  <style>
-    /* Restore original theme font colors and backgrounds */
-    body, p, ul, h1, h2, h3, summary a { color: inherit; }
-    a { color: inherit; text-decoration: underline; }
-
-    /* Profile picture larger */
-    .profile-container img.rounded {
-      width: 260px;
-      height: 260px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    /* Section CTA links styled like the "See My Resume"/"See My Projects" links */
-    .cta-style {
-      font-size: 1.1rem;
-      font-weight: bold;
-      margin: 0 0.5rem;
-      text-decoration: none;
-      padding: 0;
-      border: none;
-      background: none;
-      cursor: pointer;
-      color: inherit;
-    }
-
-    .cta-style:hover {
-      text-decoration: none;
-      opacity: 0.7;
-    }
-
-    /* See More toggle styling */
-    details summary {
-      cursor: pointer;
-      text-align: center;
-      font-size: 1.1rem;
-      font-weight: bold;
-      padding: 0.5rem 0;
-    }
-
-    /* Spacing between project sections */
-    article#work section { margin-bottom: 2.5rem; }
-
-    /* Scroll buttons styled in link style */
-    .scroll-buttons {
-      text-align: center;
-      margin: 2rem 0;
-    }
-    .scroll-buttons button {
-      font-size: 0.9rem;
-      background: none;
-      border: none;
-      color: inherit;
-      cursor: pointer;
-      text-decoration: underline;
-      padding: 0 0.3rem;
-    }
-    .scroll-buttons button:hover {
-      opacity: 0.7;
-    }
-
-    /* Contact icon styling: top-right corner of each section */
-    .contact-icon {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      font-size: 1.8rem;
-    }
-    /* Ensure article containers are position: relative */
-    article { position: relative; }
-  </style>
+	<title>Dimension by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style>
+		/* Larger profile pic */
+		.profile-container img.rounded {
+			width: 260px;
+			height: 260px;
+			border-radius: 50%;
+			object-fit: cover;
+		}
+		/* Contact icon: top-right corner */
+		article {
+			position: relative;
+		}
+		.contact-icon {
+			position: absolute;
+			top: 1rem;
+			right: 1rem;
+			font-size: 2rem;
+			color: inherit;
+			text-decoration: none;
+		}
+		/* Nav list in Work (unstyled list style) */
+		.work-nav {
+			margin: 1rem 0;
+			padding: 0;
+			list-style: none;
+			text-align: center;
+		}
+		.work-nav li {
+			display: inline;
+			margin: 0 1rem;
+			font-size: 0.9rem;
+			cursor: pointer;
+		}
+		.work-nav li:hover {
+			opacity: 0.7;
+		}
+		/* Scroll links (unstyled like nav) */
+		.scroll-buttons {
+			text-align: center;
+			margin: 2rem 0;
+		}
+		.scroll-buttons button {
+			background: none;
+			border: none;
+			font-size: 0.9rem;
+			text-decoration: underline;
+			cursor: pointer;
+			color: inherit;
+			margin: 0 0.5rem;
+		}
+		.scroll-buttons button:hover {
+			opacity: 0.7;
+		}
+	</style>
 </head>
 <body class="is-preload">
-  <script>
-    function scrollToElement(id) {
-      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-    }
-  </script>
 
-  <div id="wrapper">
-    <header id="header">
-      <div class="logo"><span class="icon fa-gem"></span></div>
-      <div class="content"><div class="inner">
-        <h1>Hi! this is Noe, Your Data Analyst</h1>
-        <p>Building insights with Excel, SQL, Power BI, Tableau, and GitHub<br />
-        <small style="color:#999;">Template is designed by <a href="https://html5up.net">HTML5 UP</a> and released under the <a href="https://html5up.net/license">Creative Commons</a> license.</small></p>
-      </div></div>
-      <nav><ul>
-        <li><a href="#aboutme">About me</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul></nav>
-    </header>
+<script>
+	function scrollToElement(id) {
+		document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+	}
+</script>
 
-    <div id="main">
-      <article id="aboutme">
-        <a href="#contact" class="icon fa-envelope contact-icon"></a>
-        <h2 class="major">About Me</h2>
-        <div class="profile-container">
-          <img src="images/pic03.jpg" alt="My Profile" class="rounded" />
-          <div class="profile-text">
-            <h2>Hi, I'm Noe May Gonzales</h2>
-            <p>I'm 24 years old</p>
-            <p>I'm from the Philippines</p>
-          </div>
-        </div>
-        <p style="font-size:1.1rem;font-weight:bold;text-align:center;">
-          📄 <a href="https://drive.google.com/file/d/191LyrwiEhs286wiGD5ahCY7vjdBpKX6r/view?usp=sharing" class="cta-style">See My Resume</a> |
-          📊 <a href="#work" class="cta-style">See My Projects</a> |
-          🛠️ <a href="#skills" class="cta-style">Explore My Skills</a>
-        </p>
-        <p>I’m a data analyst... clear insights... built this portfolio website myself using HTML and GitHub Pages.</p>
-        <ul>
-          <li><strong>Education:</strong> Bachelor’s in Management Accounting</li>
-          <li><strong>Experience:</strong> Document reviewer & audit compliance support</li>
-          <li><strong>Side Work:</strong> Practiced Excel‑based reporting and data cleaning for internal tracking</li>
-        </ul>
-        <p>I also use AI tools like <strong>ChatGPT</strong> ... automation tools like <strong>Formspree</strong>...</p>
-      </article>
+<div id="wrapper">
+	<header id="header">
+		<div class="logo"><span class="icon fa-gem"></span></div>
+		<div class="content">
+			<div class="inner">
+				<h1>Hi! this is Noe, Your Data Analyst</h1>
+				<p>Building insights with Excel, SQL, Power Bi, Tableau, and Github <br /> 
+				<small style="color: #999;">Template is designed by <a href="https://html5up.net">HTML5 UP</a> and released for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</small></p>
+			</div>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#aboutme">About me</a></li>
+				<li><a href="#work">Work</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
 
-      <article id="work">
-        <a href="#contact" class="icon fa-envelope contact-icon"></a>
-        <h2 class="major">My Works</h2>
-        <p style="text-align:center;">
-          <button class="cta-style" onclick="scrollToElement('proj1')">Supermarket Sales</button>
-          <button class="cta-style" onclick="scrollToElement('proj2')">Customer Retention</button>
-          <button class="cta-style" onclick="scrollToElement('proj3')">Product Returns</button>
-          <button class="cta-style" onclick="scrollToElement('proj4')">Portfolio Site</button>
-          <button class="cta-style" onclick="scrollToElement('proj5')">AI + Formspree</button>
-        </p>
+	<div id="main">
+		<article id="aboutme">
+			<a href="#contact" class="icon fa-envelope contact-icon"></a>
+			<h2 class="major">About me</h2>
+			<div class="profile-container">
+				<img src="images/pic03.jpg" alt="My Profile" class="rounded" />
+			</div>
+			<p style="font-size: 1.1rem; font-weight: bold; text-align: center;">
+				📄 <a href="https://drive.google.com/file/d/191LyrwiEhs286wiGD5ahCY7vjdBpKX6r/view?usp=sharing" target="_blank">See my Resume!</a> &nbsp;|&nbsp;
+				👉 <a href="#work"><strong>See My Projects</strong></a> &nbsp;|&nbsp;
+				✨ <a href="#skills"><strong>Explore My Skills</strong></a>
+			</p>
+			<p>
+				Hi, I’m a data analyst and bookkeeper with a background in management accounting and a passion for clean data and clear insights. I use tools like <strong>Excel</strong>, <strong>SQL</strong>, <strong>Power BI</strong>, and <strong>Tableau</strong> to bring numbers to life.
+			</p>
+			<ul>
+				<li><strong>Education:</strong> Bachelor’s in Management Accounting</li>
+				<li><strong>Experience:</strong> Document reviewer & audit compliance support</li>
+				<li><strong>Side Work:</strong> Practiced Excel-based reporting and data cleaning for internal tracking</li>
+			</ul>
+			<p>
+				I also built this portfolio site from scratch using HTML and GitHub Pages, and I regularly use tools like ChatGPT and Formspree to automate workflows and support client work.
+			</p>
+		</article>
 
-        <!-- Project 1 -->
-        <section id="proj1">
-          <h3>Supermarket Sales Dashboard (Excel + Power BI)</h3>
-          <a href="images/pic02.jpg" data-lightbox="project1">
-            <img class="image main" src="images/pic02.jpg" alt="Supermarket Dashboard" />
-          </a>
-          <p>This end-to-end dashboard analyzes supermarket sales performance using Excel... product line popularity.</p>
-          <details><summary><strong>See More</strong></summary>
-            <ul>
-              <li><strong>Data Source:</strong> Supermarket Sales Dataset...</li>
-              <li><strong>What I Did:</strong> Cleaned and transformed raw sales data...</li>
-              <li><strong>Focus:</strong> Time-based analysis...</li>
-            </ul>
-          </details>
-        </section>
-        <!-- Repeat for proj2–proj5 with unchanged content -->
+		<article id="work">
+			<a href="#contact" class="icon fa-envelope contact-icon"></a>
+			<h2 class="major">My Works</h2>
+			<ul class="work-nav">
+				<li onclick="scrollToElement('proj1')">Supermarket Sales</li>
+				<li onclick="scrollToElement('proj2')">Customer Retention</li>
+				<li onclick="scrollToElement('proj3')">Product Returns</li>
+				<li onclick="scrollToElement('proj4')">Portfolio Site</li>
+				<li onclick="scrollToElement('proj5')">ChatGPT + Formspree</li>
+			</ul>
 
-        <div class="scroll-buttons">
-          <button onclick="scrollToElement('wrapper')">▲ Back to Top</button>
-          <button onclick="scrollToElement('skills')">▼ Go to Skills</button>
-        </div>
-      </article>
+			<!-- Project 1 -->
+			<section id="proj1">
+				<span class="image main"><img src="images/pic02.jpg" alt="Project 1" /></span>
+				<h3>Supermarket Sales Dashboard (Excel + Power BI)</h3>
+				<p>Analyzed supermarket sales using Excel and visualized trends in Power BI. This project covers KPIs like revenue by customer type, best-selling product lines, and peak sales periods. It was my first end-to-end dashboard combining manual cleaning with interactive visuals.</p>
+			</section>
 
-      <article id="skills">
-        <a href="#contact" class="icon fa-envelope contact-icon"></a>
-        <h2 class="major">Skills</h2>
-        <span class="image main"><img src="images/pic03.jpg" alt="Skills Overview" /></span>
-        <p>I bring a combination of technical tools... decision‑makers.</p>
-        <h3>Data Analysis</h3>
-        <ul>
-          <li><strong>Excel:</strong> PivotTables, Charts, Power Query, VLOOKUP/XLOOKUP</li>
-          <li><strong>SQL:</strong> Joins, filters, aggregations using DB Browser for SQLite</li>
-          <li><strong>Tableau & Power BI:</strong> Built dashboards...</li>
-        </ul>
-        <!-- Additional skill categories unchanged -->
-        <div class="scroll-buttons">
-          <button onclick="scrollToElement('wrapper')">▲ Back to Top</button>
-        </div>
-      </article>
+			<!-- Project 2 -->
+			<section id="proj2">
+				<span class="image main"><img src="images/pic02.jpg" alt="Project 2" /></span>
+				<h3>Customer Retention Insights (SQL + Tableau)</h3>
+				<p>Using the Telco Customer Churn dataset, I cleaned and queried data using SQL (SQLite) and built dashboards in Tableau. I explored patterns in churn behavior across contract types, tenure, and internet service categories.</p>
+			</section>
 
-      <article id="contact">
-        <h2 class="major">Contact Me</h2>
-        <form method="POST" action="https://formspree.io/f/xqalekrv">
-          <!-- form content unchanged -->
-        </form>
-        <ul class="icons">
-          <!-- social icons unchanged -->
-        </ul>
-      </article>
-    </div>
+			<!-- Project 3 -->
+			<section id="proj3">
+				<span class="image main"><img src="images/pic02.jpg" alt="Project 3" /></span>
+				<h3>Product Return Dashboard (Excel + Power Query + Power Bi)</h3>
+				<p>This project visualizes product return reasons, quantities, and trends to help optimize return policies and reduce losses. I practiced cleaning real-world messy data using Excel and Power Query before building a clean, interactive dashboard with visuals.</p>
+			</section>
 
-    <footer id="footer">
-      <p>&copy; Noe. Design: <a href="https://html5up.net">HTML5 UP</a>. Images: Yours truly!</p>
-    </footer>
-  </div>
+			<!-- Project 4 -->
+			<section id="proj4">
+				<span class="image main"><img src="images/pic02.jpg" alt="GitHub Website" /></span>
+				<h3>Website Editor (HTML + GitHub Pages)</h3>
+				<p>I created this site using the Dimension theme from HTML5 UP and hosted it on GitHub Pages. I learned how to edit HTML/CSS, fix mobile responsiveness, and customize each section to reflect my work and personality. This project shows my commitment to learning new tools and presenting myself professionally online.</p>
+			</section>
 
-  <div id="bg"></div>
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
-  <link href="assets/lightbox2/css/lightbox.min.css" rel="stylesheet" />
-  <script src="assets/lightbox2/js/lightbox.min.js"></script>
-  <script>
-    lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true,
-      'fadeDuration': 200,
-      'imageFadeDuration': 200
-    });
-  </script>
+			<!-- Project 5 -->
+			<section id="proj5">
+				<span class="image main"><img src="images/pic03.jpg" alt="Project 5" /></span>
+				<h3>Workflow Automation with ChatGPT & Formspree</h3>
+				<p>Designed and implemented automated workflows using ChatGPT for content generation and Formspree for form submissions. This project demonstrates practical use of AI in improving productivity and creating interactive, no-code solutions for websites.</p>
+			</section>
+
+			<div class="scroll-buttons">
+				<button onclick="scrollToElement('wrapper')">▲ Back to Top</button>
+				<button onclick="scrollToElement('skills')">▼ Go to Skills</button>
+			</div>
+		</article>
+
+		<article id="skills">
+			<a href="#contact" class="icon fa-envelope contact-icon"></a>
+			<h2 class="major">Skills</h2>
+			<span class="image main"><img src="images/pic03.jpg" alt="Skills" /></span>
+			<p>I specialize in data analysis and bookkeeping with a strong foundation in tools and platforms that support decision-making and reporting. I also bring soft skills like communication and time management, making me reliable for both independent and team-based work.</p>
+
+			<h3>Data Analysis</h3>
+			<span class="image main"><img src="images/pic03.jpg" alt="Data Analysis" /></span>
+			<ul>
+				<li>Excel: PivotTables, Charts, VLOOKUP/XLOOKUP, Power Query, cleaning & transformation</li>
+				<li>SQL: Joins, filters, aggregation, subqueries using DB Browser for SQLite</li>
+				<li>Tableau & Power BI: Built interactive dashboards for sales, retention, and returns</li>
+			</ul>
+
+			<h3>Bookkeeping & Accounting</h3>
+			<span class="image main"><img src="images/pic03.jpg" alt="Bookkeeping" /></span>
+			<ul>
+				<li>Accounts reconciliation, journal entries, and ledger reviews</li>
+				<li>Financial reporting using Excel-based monthly summaries</li>
+				<li>Inventory and costing analysis</li>
+			</ul>
+
+			<h3>Tools & Platforms</h3>
+			<span class="image main"><img src="images/pic03.jpg" alt="Tools" /></span>
+			<ul>
+				<li>Microsoft Excel & Google Sheets</li>
+				<li>DB Browser for SQLite</li>
+				<li>Tableau Public, Power BI</li>
+				<li>Microsoft Word, Google Docs, Canva</li>
+				<li>GitHub Pages (for building this portfolio site)</li>
+			</ul>
+
+			<h3>AI Productivity</h3>
+			<span class="image main"><img src="images/pic03.jpg" alt="Tools" /></span>
+			<ul>
+				<li>Using ChatGPT for task automation, content writing, and brainstorming</li>
+			</ul>
+
+			<h3>Soft Skills</h3>
+			<span class="image main"><img src="images/pic03.jpg" alt="Soft Skills" /></span>
+			<ul>
+				<li>Detail-oriented with strong organizational habits</li>
+				<li>Reliable communicator (email, documentation, reporting)</li>
+				<li>Quick learner – adapts easily to tools and workflows</li>
+				<li>Time management and self-direction for remote tasks</li>
+			</ul>
+
+			<div class="scroll-buttons">
+				<button onclick="scrollToElement('wrapper')">▲ Back to Top</button>
+			</div>
+		</article>
+
+		<article id="contact">
+			<h2 class="major">Contact Me</h2>
+			<form method="POST" action="https://formspree.io/f/xqalekrv">
+				<div class="fields">
+					<div class="field half">
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name" />
+					</div>
+					<div class="field half">
+						<label for="email">Email</label>
+						<input type="text" name="email" id="email" />
+					</div>
+					<div class="field">
+						<label for="message">Message</label>
+						<textarea name="message" id="message" rows="4"></textarea>
+					</div>
+				</div>
+				<ul class="actions">
+					<li><input type="submit" value="Send Message" class="primary" /></li>
+					<li><input type="reset" value="Reset" /></li>
+				</ul>
+			</form>
+			<ul class="icons">
+				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+			</ul>
+		</article>
+
+	</div>
+
+	<footer id="footer">
+		<p class="copyright">&copy; Noe. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+	</footer>
+</div>
+
+<div id="bg"></div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<link href="assets/lightbox2/css/lightbox.min.css" rel="stylesheet" />
+<script src="assets/lightbox2/js/lightbox.min.js"></script>
+<script>
+	lightbox.option({
+		'resizeDuration': 200,
+		'wrapAround': true,
+		'fadeDuration': 200,
+		'imageFadeDuration': 200
+	});
+</script>
 </body>
 </html>
